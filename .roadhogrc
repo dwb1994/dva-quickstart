@@ -1,0 +1,25 @@
+{
+  "entry": "src/index.js",
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime",
+        ["import", { "libraryName": "antd", "style": true }]
+      ]
+    }
+  },
+  "outputPath": "./dist",
+  "sass": {
+    "file": "./src/index.scss"
+  },
+  "theme": {
+    "@primary-color": "#0ff"
+  }
+}
